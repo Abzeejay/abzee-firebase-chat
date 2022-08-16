@@ -1,7 +1,7 @@
 {
   "name": "abzee-firebase-chat",
   "version": "0.1.0",
-  "homepage": ".",
+  "homepage": "http://192.168.8.100:3001/abzee-firebase-chat",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.4",
