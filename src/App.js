@@ -12,11 +12,11 @@ function App() {
     const [isAuth, setAuth]= useState(false);
     const [users, setUsers] = useState([
         {id: 1, name: 'Admin', password: '1234'},
-        {id: 2, name: 'kkkk', password: '1'},
-        {id: 3, name: 'kirill', password: '1'},
-        {id: 4, name: 'test_user', password: '1'},
-        {id: 5, name: 'whereareyo', password: '1'},
-        {id: 6, name: 'internal_dragon_', password: '1'},
+        {id: 2, name: 'Kemi', password: '1'},
+        {id: 3, name: 'Moses', password: '1'},
+        {id: 4, name: 'Dafe', password: '1'},
+        {id: 5, name: 'Dele', password: '1'},
+        {id: 6, name: 'Tony', password: '1'},
     ]);
     const [activeUser, setActiveUser] = useState({})
     const [chat, setChat] = useState([
@@ -44,12 +44,13 @@ function App() {
     console.log(chat)
     
     const firebaseConfig = {
-        apiKey: "AIzaSyCae8KcHocr0osURRI7fBNsooycM7FZ3_E",
-        authDomain: "abiodun-chatapp.firebaseapp.com",
-        projectId: "abiodun-chatapp",
-        storageBucket: "abiodun-chatapp.appspot.com",
-        messagingSenderId: "981605944046",
-        appId: "1:981605944046:web:86b0cbcac0ea2c86afc1ff",
+        apiKey: process.env.REACT_APP_API_KEY,
+        authDomain: process.env.REACT_APP_AUTH_DOMAIN,
+        databaseURL: process.env.REACT_APP_DATABASE_URL,
+        projectId: process.env.REACT_APP_PROJECT_ID,
+        storageBucket: process.env.REACT_APP_STORAGE_BUCKET,
+        messagingSenderId: process.env.REACT_APP_MESSAGING_SENDER_ID,
+        appId: process.env.REACT_APP_API_ID,
         
     }
     
