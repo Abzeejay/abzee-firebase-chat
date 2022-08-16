@@ -1,5 +1,5 @@
 import React, { useState, useMemo } from 'react';
-import { BrowserRouter } from 'react-router-dom';
+import { HashRouter } from 'react-router-dom';
 import AuthContext from './context/index';
 import { initializeApp } from "firebase/app"
 import { getFirestore } from 'firebase/firestore'
@@ -66,7 +66,7 @@ function App() {
             app,
             firestore
         }}>
-            <BrowserRouter>
+            <HashRouter>
                 <div className='App'>
                     <AppRouter
                         isAuth={isAuth}
@@ -85,7 +85,7 @@ function App() {
                         setSearch={setSearch}
                     />
                 </div>
-            </BrowserRouter>
+            </HashRouter>
         </AuthContext.Provider>
     )
 }
